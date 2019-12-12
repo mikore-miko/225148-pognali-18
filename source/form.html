@@ -31,6 +31,90 @@
         <h1 class="header__title">Направления</h1>
   </header>
 
+  <main class="main">
+
+    <section class="profile">
+      <div class="profile__level">
+        <p>80</p>
+        <p>level</p>
+      </div>
+      <img src="#" alt="profile-photo">
+      <button class="profile__button">Сменить фото</button>
+      <fieldset>
+        <legend>Тэги</legend>
+        <input type="textarea" name="tags">
+      </fieldset>
+      <fieldset>
+        <legend>Транспорт</legend>
+        <ul>
+          <li>
+            <label>
+              <input type="checkbox" name="plane">
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="bus">
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="bike">
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="walk">
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+    </section>
+
+    <section class="plans">
+      <div class="plans__wrapper">
+        <ol class="plans__list">
+          <li class="plans__item">
+            <p class="plans__country">Франция, Италия</p>
+            <p class="plans__people">3 Попутчика</p>
+            <p class="plans__time"><time>26 МАР</time> - <time>29 МАР</time></p>
+            <button class="plans__button" type="button">Изменить</button>
+          </li>
+          <li class="plans__item">
+            <p class="plans__country">Таиланд, Индонезия</p>
+            <p class="plans__people">1 Попутчик</p>
+            <p class="plans__time"><time>1 ИЮЛ</time> - <time>15 ИЮЛ</time></p>
+            <button class="plans__button" type="button">Изменить</button>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <h2>Шаг 1. Даты пребывания</h2>
+        <p>Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+        <form>
+          <label>
+            <p>Ищу попутчиков:</p>
+            <input type="number" name="people" value="2">
+          </label>
+          <p>ЧЕЛ.</p>
+          <label>
+            <p>Длительность:</p>
+            <input type="number" name="days" value="2">
+          </label>
+          <p>ДН.</p>
+          <label>
+            <input type="checkbox" checked>
+            Можно с детьми
+          </label>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
   <footer class="footer">
     <h2 class="footer__title">Погнали?</h2>
     <ul class="footer__list social-list">
