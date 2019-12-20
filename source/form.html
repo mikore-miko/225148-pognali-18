@@ -40,29 +40,29 @@
       </div>
       <img src="#" alt="profile-photo">
       <button class="profile__button">Сменить фото</button>
-      <fieldset>
-        <legend>Тэги</legend>
-        <input type="textarea" name="tags">
+      <fieldset class="profile__tags">
+        <legend class="tags__title">Тэги</legend>
+        <p class="tags__text">#бургер #бар #футбол #концерт #крафт</p>
       </fieldset>
-      <fieldset>
-        <legend>Транспорт</legend>
-        <ul>
-          <li>
+      <fieldset class="profile__transports transports">
+        <legend class="transports__title">Транспорт</legend>
+        <ul class="transports__list">
+          <li class="transports__item">
             <label>
               <input type="checkbox" name="plane">
             </label>
           </li>
-          <li>
+          <li class="transports__item">
             <label>
               <input type="checkbox" name="bus">
             </label>
           </li>
-          <li>
+          <li class="transports__item">
             <label>
               <input type="checkbox" name="bike">
             </label>
           </li>
-          <li>
+          <li class="transports__item">
             <label>
               <input type="checkbox" name="walk">
             </label>
@@ -90,26 +90,63 @@
       </div>
     </section>
 
-    <section>
-      <div>
-        <h2>Шаг 1. Даты пребывания</h2>
-        <p>Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
-        <form>
+    <section class="addplan">
+      <h2 class="addplan__title">Добавить план:</h2>
+      <div class="step1">
+        <h2 class="step1__title">Шаг 1. Даты пребывания</h2>
+        <p class="step1__text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+        <form class="step1__form">
           <label>
-            <p>Ищу попутчиков:</p>
-            <input type="number" name="people" value="2">
+            <p class="step1__form-text">Ищу попутчиков:</p>
+            <input class="step1__form-input" type="number" name="people" value="2">
           </label>
           <p>ЧЕЛ.</p>
           <label>
-            <p>Длительность:</p>
-            <input type="number" name="days" value="2">
+            <p class="step1__form-text">Длительность:</p>
+            <input class="step1__form-input" type="number" name="days" value="2">
           </label>
           <p>ДН.</p>
           <label>
-            <input type="checkbox" checked>
-            Можно с детьми
+            <input class="step1__form-chekbox" type="checkbox" checked>
+            <p class="step1__form-chekbox-text">Можно с детьми</p>
           </label>
         </form>
+        <a class="addplan__next-step" href="#">Следующий шаг</a>
+      </div>
+      <div>
+        <h2>Шаг 2. Маршрут</h2>
+        <p>Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.</p>
+        <form>
+          <select>
+            <option>Босния и Герцоговина</option>
+          </select>
+          <br>
+          <select>
+            <option>Чехия</option>
+          </select>
+          <br>
+          <select>
+            <option>Выберите страну</option>
+          </select>
+        </form>
+        <button>Добавить страну</button>
+        <a class="addplan__next-step" href="#">Следующий шаг</a>
+        <a class="addplan__back-step" href="#">На шаг назад</a>
+      </div>
+      <div>
+        <h2>Шаг 3. Развлечения</h2>
+        <p>
+          Наконец, расскажите о своих планах времяпровождения.
+          Можно писать в свободной форме и ставить тэги.
+        </p>
+        <form>
+          <p>Босния и герцеговина</p>
+          <textarea rows="10"></textarea>
+          <p>Чехия</p>
+          <textarea rows="10">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+        </form>
+        <button class="addplan__button">Отправить</button>
+        <a class="addplan__back-step" href="#">На шаг назад</a>
       </div>
     </section>
 
