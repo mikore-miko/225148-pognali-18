@@ -11,11 +11,11 @@
   <header class="header">
       <a class="header__logo">
           <img class="header__logo-image" src="https://via.placeholder.com/150x150" width="100" height="19" alt="Логотип Погнали?">
-        </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+      </a>
+      <nav class="header-nav">
+        <button class="header-nav__toggle" type="button">Открыть меню</button>
+        <div class="header-nav__wrapper">
+          <ul class="header-nav__list site-list">
             <li class="site-list__item">
               <a href="index.html">О сервисе</a>
             </li>
@@ -27,16 +27,16 @@
             </li>
           </ul>
         </div>
-        </nav>
-        <h1 class="header__title">Направления</h1>
+      </nav>
+      <h1 class="header__title">Направления</h1>
   </header>
 
   <main class="main">
 
     <section class="profile">
       <div class="profile__level">
-        <p>80</p>
-        <p>level</p>
+        <p class="profile__level--value">80</p>
+        <p class="profile__level--text">level</p>
       </div>
       <img src="#" alt="profile-photo">
       <button class="profile__button">Сменить фото</button>
@@ -49,22 +49,22 @@
         <ul class="transports__list">
           <li class="transports__item">
             <label>
-              <input type="checkbox" name="plane">
+              <input class="transports__item--input" type="checkbox" name="plane">
             </label>
           </li>
           <li class="transports__item">
             <label>
-              <input type="checkbox" name="bus">
+              <input class="transports__item--input" type="checkbox" name="bus">
             </label>
           </li>
           <li class="transports__item">
             <label>
-              <input type="checkbox" name="bike">
+              <input class="transports__item--input" type="checkbox" name="bike">
             </label>
           </li>
           <li class="transports__item">
             <label>
-              <input type="checkbox" name="walk">
+              <input class="transports__item--input" type="checkbox" name="walk">
             </label>
           </li>
         </ul>
@@ -92,58 +92,58 @@
 
     <section class="addplan">
       <h2 class="addplan__title">Добавить план:</h2>
-      <div class="step1">
-        <h2 class="step1__title">Шаг 1. Даты пребывания</h2>
-        <p class="step1__text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
-        <form class="step1__form">
+      <div class="step-one">
+        <h2 class="step-one__title">Шаг 1. Даты пребывания</h2>
+        <p class="step-one__text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+        <form class="step-one__form">
           <label>
-            <p class="step1__form-text">Ищу попутчиков:</p>
-            <input class="step1__form-input" type="number" name="people" value="2">
+            <p class="step-one__form-text">Ищу попутчиков:</p>
+            <input class="step-one__form-input" type="number" name="people" value="2">
           </label>
           <p>ЧЕЛ.</p>
           <label>
-            <p class="step1__form-text">Длительность:</p>
-            <input class="step1__form-input" type="number" name="days" value="2">
+            <p class="step-one__form-text">Длительность:</p>
+            <input class="step-one__form-input" type="number" name="days" value="2">
           </label>
           <p>ДН.</p>
           <label>
-            <input class="step1__form-chekbox" type="checkbox" checked>
-            <p class="step1__form-chekbox-text">Можно с детьми</p>
+            <input class="step-one__form-chekbox" type="checkbox" checked>
+            <p class="step-one__form-chekbox-text">Можно с детьми</p>
           </label>
         </form>
         <a class="addplan__next-step" href="#">Следующий шаг</a>
       </div>
-      <div>
-        <h2>Шаг 2. Маршрут</h2>
+      <div class="step-two">
+        <h2 class="addplan__title">Шаг 2. Маршрут</h2>
         <p>Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.</p>
-        <form>
-          <select>
-            <option>Босния и Герцоговина</option>
+        <form class="step-two__form">
+          <select class="step-two__select">
+            <option class="step-two__option">Босния и Герцоговина</option>
           </select>
           <br>
-          <select>
-            <option>Чехия</option>
+          <select class="step-two__select">
+            <option class="step-two__option">Чехия</option>
           </select>
           <br>
-          <select>
-            <option>Выберите страну</option>
+          <select class="step-two__select">
+            <option class="step-two__option">Выберите страну</option>
           </select>
         </form>
-        <button>Добавить страну</button>
+        <button class="step-two__button">Добавить страну</button>
         <a class="addplan__next-step" href="#">Следующий шаг</a>
         <a class="addplan__back-step" href="#">На шаг назад</a>
       </div>
-      <div>
-        <h2>Шаг 3. Развлечения</h2>
-        <p>
+      <div class="step-three">
+        <h2 class="addplan__title">Шаг 3. Развлечения</h2>
+        <p class="step-three__text">
           Наконец, расскажите о своих планах времяпровождения.
           Можно писать в свободной форме и ставить тэги.
         </p>
-        <form>
-          <p>Босния и герцеговина</p>
-          <textarea rows="10"></textarea>
-          <p>Чехия</p>
-          <textarea rows="10">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+        <form class="step-three__form">
+          <p class="step-three__form-title">Босния и герцеговина</p>
+          <textarea class="step-three__textarea" rows="10"></textarea>
+          <p class="step-three__form-title">Чехия</p>
+          <textarea class="step-three__textarea" rows="10">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
         </form>
         <button class="addplan__button">Отправить</button>
         <a class="addplan__back-step" href="#">На шаг назад</a>
